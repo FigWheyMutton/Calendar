@@ -1,0 +1,101 @@
+:root {
+    --hue-red: 0;
+    --hue-green: 145;
+    --hue-neutral: black;
+}
+
+.pastDue {
+    --hue: var(--hue-red);
+}
+
+.present {
+    --hue: var(--hue-neutral);
+}
+
+.future {
+    --hue: var(--hue-green);
+}
+
+.jumbotron {
+    background-color: lightcyan;
+    margin: 0px;
+}
+
+.timeSheet {
+    font-size: large;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.remind {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.reminder {
+    font-size: small;
+}
+
+.hide {
+    display: none;
+}
+
+.display-4 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.lead {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-inline {
+    display: flex;
+}
+
+.leftSection {
+    width: 20%;
+    min-height: 250px;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.middleSection {
+    min-height: 250px;
+    min-width: 60%;
+    border: 2px;
+    border-color: black;
+    align-items: center;
+    justify-content: center;
+}
+
+.controller {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.btn {
+    display: flex;
+    width: 20%;
+    min-height: 250px;
+    border-color: black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 30px 30px 10px;
+}
