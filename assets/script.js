@@ -4,8 +4,7 @@ var save = $('.storage')
 
 
 
-
-var moment = moment().format("ddd, MMM YYYY ");
+var moment = moment().format("ddd, MMM YYYY "); 
 $('#1A').text(moment);
 
 save.on('click', function change(event) {
@@ -14,6 +13,7 @@ save.on('click', function change(event) {
         var userInput = $(this).siblings('.middleSection').children('.controller').val()
         console.log(userInput)
         localStorage.setItem(hourKey, userInput)
+        save.classList.remove('hide')
 })
 
 $('#9A').val(localStorage.getItem(9))
