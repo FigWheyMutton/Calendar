@@ -99,3 +99,15 @@
     align-items: center;
     border-radius: 10px 30px 30px 10px;
 }
+
+.past {
+    background-color: red;
+}
+
+.present {
+    background-color: grey;
+}
+
+.future {
+    background-color: green;
+}
