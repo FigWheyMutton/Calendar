@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,123 +14,119 @@
     <link rel="stylesheet" href="./assets/style.css" />
     <title>Calendar</title>
 </head>
-
-<body>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-4">Work Day Scheduler</h1>
-            <p class="lead">A calendar to help you plan your day!</p>
-            <p id="1A" class=" timeSheet"></p>
-        </div>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="display-4">Work Day Scheduler</h1>
+        <p class="lead">A calendar to help you plan your day!</p>
+        <p id="1A" class=" timeSheet"></p>
     </div>
-    <div class="jumbootron">
-        <div class="remind">
-            <h1 id="completed" class="reminder hide ">Appointment added to local storage</h1>
-        </div>
+</div>
+<div class="jumbootron">
+    <div class="remind">
+        <h1 id="completed" class="reminder hide ">Appointment added to local storage</h1>
     </div>
-    <form class="form-inline">
-        <div class="leftSection">
-            <p>9AM</p>
-        </div>
-        <div class="form-group middleSection">
-            <textarea type="password" rows="10" class="form-control controller past present future" id="9A"
-                placeholder="What do you need to do"></textarea>
-        </div>
-        <button id="9" class="btn btn-primary storage"><img src="./assets/images/images.png"
-                alt="Save Button"></img></button>
-    </form>
-    <form class="form-inline">
-        <div class="leftSection">
-            <p>10 AM</p>
-        </div>
-        <div class="form-group middleSection">
-            <textarea type="password" rows="10" class="form-control controller past present future" id="10A"
-                placeholder="What do you need to do"></textarea>
-        </div>
-        <button id="10" class="btn btn-primary storage"><img src="./assets/images/images.png"
-                alt="Save Button"></img></button>
-    </form>
-    <form class="form-inline">
-        <div class="leftSection">
-            <p>11 AM</p>
-        </div>
-        <div class="form-group middleSection">
-            <textarea type="password" rows="10" class="form-control controller  past present future" id="11A"
-                placeholder="What do you need to do"></textarea>
-        </div>
-        <button id="11" class="btn btn-primary storage"><img src="./assets/images/images.png"
-                alt="Save Button"></img></button>
-    </form>
-    <form class="form-inline">
-        <div class="leftSection">
-            <p>12 AM</p>
-        </div>
-        <div class="form-group middleSection">
-            <textarea type="password" rows="10" class="form-control controller past present future" id="12A"
-                placeholder="What do you need to do"></textarea>
-        </div>
-        <button id="12" class="btn btn-primary storage"><img src="./assets/images/images.png"
-                alt="Save Button"></img></button>
-    </form>
-    <form class="form-inline">
-        <div class="leftSection">
-            <p>1 PM</p>
-        </div>
-        <div class="form-group middleSection">
-            <textarea type="password" rows="10" class="form-control controller  past present future" id="13A"
-                placeholder="What do you need to do"></textarea>
-        </div>
-        <button id="13" class="btn btn-primary storage"><img src="./assets/images/images.png"
-                alt="Save Button"></img></button>
-    </form>
-    <form class="form-inline">
-        <div class="leftSection">
-            <p>2 PM</p>
-        </div>
-        <div class="form-group middleSection">
-            <textarea type="password" rows="10" class="form-control controller past present future" id="14A"
-                placeholder="What do you need to do"></textarea>
-        </div>
-        <button id="14" class="btn btn-primary storage"><img src="./assets/images/images.png"
-                alt="Save Button"></img></button>
-    </form>
-    <form class="form-inline">
-        <div class="leftSection">
-            <p>3 PM</p>
-        </div>
-        <div class="form-group middleSection">
-            <textarea type="password" rows="10" class="form-control controller past present future" id="15A"
-                placeholder="What do you need to do"></textarea>
-        </div>
-        <button id="15" class="btn btn-primary storage"><img src="./assets/images/images.png"
-                alt="Save Button"></img></button>
-    </form>
-    <form class="form-inline">
-        <div class="leftSection">
-            <p>4 PM</p>
-        </div>
-        <div class="form-group middleSection">
-            <textarea type="password" rows="10" class="form-control controller past present future" id="16A"
-                placeholder="What do you need to do"></textarea>
-        </div>
-        <button id="16" class="btn btn-primary storage"><img src="./assets/images/images.png"
-                alt="Save Button"></img></button>
-    </form>
-    <form class="form-inline">
-        <div class="leftSection">
-            <p>5 PM</p>
-        </div>
-        <div class="form-group middleSection">
-            <textarea type="password" rows="10" class="form-control controller past present future" id="17A"
-                placeholder="What do you need to do"></textarea>
-        </div>
-        <button id="17" class="btn btn-primary storage"><img src="./assets/images/images.png"
-                alt="Save Button"></img></button>
-    </form>
+</div>
+<form class="form-inline">
+    <div class="leftSection">
+        <p>9AM</p>
+    </div>
+    <div class="form-group middleSection">
+        <textarea type="password" rows="10" class="time form-control controller" id="9A"
+            placeholder="What do you need to do"></textarea>
+    </div>
+    <button id="9" class="btn btn-primary storage"><img src="./assets/images/images.png"
+            alt="Save Button"></img></button>
+</form>
+<form class="form-inline">
+    <div class="leftSection">
+        <p>10 AM</p>
+    </div>
+    <div class="form-group middleSection">
+        <textarea type="password" rows="10" class="time form-control controller" id="10A"
+            placeholder="What do you need to do"></textarea>
+    </div>
+    <button id="10" class="btn btn-primary storage"><img src="./assets/images/images.png"
+            alt="Save Button"></img></button>
+</form>
+<form class="form-inline">
+    <div class="leftSection">
+        <p>11 AM</p>
+    </div>
+    <div class="form-group middleSection">
+        <textarea type="password" rows="10" class="time form-control controller" id="11A"
+            placeholder="What do you need to do"></textarea>
+    </div>
+    <button id="11" class="btn btn-primary storage"><img src="./assets/images/images.png"
+            alt="Save Button"></img></button>
+</form>
+<form class="form-inline">
+    <div class="leftSection">
+        <p>12 AM</p>
+    </div>
+    <div class="form-group middleSection">
+        <textarea type="password" rows="10" class="time form-control controller" id="12A"
+            placeholder="What do you need to do"></textarea>
+    </div>
+    <button id="12" class="btn btn-primary storage"><img src="./assets/images/images.png"
+            alt="Save Button"></img></button>
+</form>
+<form class="form-inline">
+    <div class="leftSection">
+        <p>1 PM</p>
+    </div>
+    <div class="form-group middleSection">
+        <textarea type="password" rows="10" class="time form-control controller" id="13A"
+            placeholder="What do you need to do"></textarea>
+    </div>
+    <button id="13" class="btn btn-primary storage"><img src="./assets/images/images.png"
+            alt="Save Button"></img></button>
+</form>
+<form class="form-inline">
+    <div class="leftSection">
+        <p>2 PM</p>
+    </div>
+    <div class="form-group middleSection">
+        <textarea type="password" rows="10" class="time form-control controller" id="14A"
+            placeholder="What do you need to do"></textarea>
+    </div>
+    <button id="14" class="btn btn-primary storage"><img src="./assets/images/images.png"
+            alt="Save Button"></img></button>
+</form>
+<form class="form-inline">
+    <div class="leftSection">
+        <p>3 PM</p>
+    </div>
+    <div class="form-group middleSection">
+        <textarea type="password" rows="10" class="time form-control controller" id="15A"
+            placeholder="What do you need to do"></textarea>
+    </div>
+    <button id="15" class="btn btn-primary storage"><img src="./assets/images/images.png"
+            alt="Save Button"></img></button>
+</form>
+<form class="form-inline">
+    <div class="leftSection">
+        <p>4 PM</p>
+    </div>
+    <div class="form-group middleSection">
+        <textarea type="password" rows="10" class="time form-control controller" id="16A"
+            placeholder="What do you need to do"></textarea>
+    </div>
+    <button id="16" class="btn btn-primary storage"><img src="./assets/images/images.png"
+            alt="Save Button"></img></button>
+</form>
+<form class="form-inline">
+    <div class="leftSection">
+        <p>5 PM</p>
+    </div>
+    <div class="form-group middleSection">
+        <textarea type="password" rows="10" class="time form-control controller" id="17A"
+            placeholder="What do you need to do"></textarea>
+    </div>
+    <button id="17" class="btn btn-primary storage"><img src="./assets/images/images.png"
+            alt="Save Button"></img></button>
+</form>
 </body>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
-<script src="./assets/script.js"></script>
-</body>
