@@ -36,7 +36,7 @@
 var localStorageSaves = new Array();
 var save = $('.storage')
 
-var moment = moment().format("ddd, MMM YYYY "); 
+var pass = moment().format("ddd, MMM YYYY "); 
 
 save.on('click', function change(event) {
         event.preventDefault()
@@ -47,18 +47,19 @@ save.on('click', function change(event) {
         $('.reminder').removeClass('hide')
 })
 
+let currentTime = moment()
 let elements = document.querySelectorAll(".time")
 let time = 9;
 for (element of elements) {
   let setTime = moment().hours(time).minutes(0).seconds(0);
   element.dataset.time = moment(setTime).unix();
-  if (moment.unix() > setTime.unix()) {
+  if (currentTime.unix() > setTime.unix()) {
     element.classList.add("past")
   }
-  if (moment.unix() < setTime.unix()) {
+  if (currentTime.unix() < setTime.unix()) {
     element.classList.add("future")
   }
-  if (moment(moment).hour() == moment(setTime).hour()) {    
+  if (moment(currentTime).hour() == moment(setTime).hour()) {    
     element.classList.add("present")
   }
   time++
