@@ -47,19 +47,18 @@ save.on('click', function change(event) {
         $('.reminder').removeClass('hide')
 })
 
-let currentTime = moment();
 let elements = document.querySelectorAll(".time")
 let time = 9;
 for (element of elements) {
   let setTime = moment().hours(time).minutes(0).seconds(0);
   element.dataset.time = moment(setTime).unix();
-  if (currentTime.unix() > setTime.unix()) {
+  if (moment.unix() > setTime.unix()) {
     element.classList.add("past")
   }
-  if (currentTime.unix() < setTime.unix()) {
+  if (moment.unix() < setTime.unix()) {
     element.classList.add("future")
   }
-  if (moment(currentTime).hour() == moment(setTime).hour()) {    
+  if (moment(moment).hour() == moment(setTime).hour()) {    
     element.classList.add("present")
   }
   time++
